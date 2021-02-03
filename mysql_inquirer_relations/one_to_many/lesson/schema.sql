@@ -1,0 +1,6 @@
+CREATE TABLE blog_posts (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	post VARCHAR(255) NOT NULL,
+  user_id INT NOT NULL,
+	FOREIGN KEY (user_id) REFERENCES users(id)
+);
